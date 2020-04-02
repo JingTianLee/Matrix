@@ -1,7 +1,7 @@
 /*
  * @Author: ljt1469
  * @Date: 2020-04-02 14:07:51
- * @LastEditTime: 2020-04-02 15:15:08
+ * @LastEditTime: 2020-04-02 15:22:46
  * @Description: 该文件创建了一个矩阵类，用于实现矩阵的转置以及获取矩阵每一行或每一列的值。矩阵中的下标均从0开始
  */
 class Matrix {
@@ -36,7 +36,7 @@ class Matrix {
         } else {
           //如果filler是一维数组并且长度符合要求，将值赋给entries这个一维数组
           if (!(filler.length === this.size)) {
-            throw new error("数组元素个数与新建矩阵元素个数不相等")
+            throw new Error("数组元素个数与新建矩阵元素个数不相等")
           } else {
             for (let i = 0; i < this.size; i++) {
               this.entries[i] = filler[i];
